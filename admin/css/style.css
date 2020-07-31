@@ -1,0 +1,374 @@
+/* Подключение шрифтов */
+
+@font-face{
+	font-family:montserrat;
+    src:url("fonts/montserrat.woff");
+}
+
+/* Общие стили */
+
+body{
+	margin:0px;
+	background-color:#E0E0E0;
+}
+
+*{
+	font-family:montserrat;
+	box-sizing: border-box;
+}
+
+button{
+	height:40px;
+	background-color:#109D61;
+	color:#FFF;
+	border:0px;
+	font-size:16px;
+	cursor:pointer;
+	margin:10px 10px 0px 0px;
+}
+button:hover{
+	background-color:#8DDEBB;
+}
+
+/* Стили верхней части */
+
+#topmenu{
+	position:fixed;
+	width:100%;
+	left:0px;
+	top:0px;
+	height:50px;
+}
+#logo{
+	position:absolute;
+	width:300px;
+	left:0px;
+	height:50px;
+	background-color:#222;
+	color:#E65217;
+	padding:15px 0px 0px 20px;
+}
+#toppanel{
+	position:absolute;
+	left:300px;
+	right:0px;
+	height:50px;
+	background-color:#E65217;
+	padding:15px 0px 0px 20px;
+}
+
+/* Стили левого меню */
+
+#leftmenu{
+	position:fixed;
+	width:300px;
+	left:0px;
+	top:50px;
+	height:100%;
+	background-color:#FFF;
+}
+.select-menu{
+	padding:15px 0px 0px 20px;
+	width:100%;
+	left:0px;
+	top:0px;
+	height:50px;
+	cursor:pointer;
+}
+.select-menu:hover{
+	color:#00FF92;
+}
+
+/* Стили основной части */
+
+#content{
+	display:flex;
+	flex-wrap: wrap;
+	position:absolute;
+	top:50px;
+	left:300px;
+	right:0px;
+}
+
+/* //////////////Стили каталогов и товаров///////////// */
+
+/* Стили кнопок навигации */
+
+#back{
+	padding:15px 0px 0px 20px;
+	cursor:pointer;
+}
+#back:hover{
+	color:#109D61;
+}
+#backpanel{
+	width:100%;
+	height:50px;
+}
+
+/* Стили всплывающих меню */
+
+.swim{
+	background-color:#FFF;
+	box-shadow: 0px 5px 5px 0px #888;
+}
+.swimpoint{
+	width:100%;
+	height:25px;
+	cursor:pointer;
+	padding:2px;
+}
+.swimpoint:hover{
+	color:#109D61;
+}
+
+/* Стили каталогов */
+
+.catalog{
+	width:100px;
+	height:100px;
+	margin:25px;
+	background-color:#E65217;
+	box-shadow: 0px 5px 5px 0px #888;
+	cursor:pointer;
+}
+.catalog:hover{
+	background-color:#F68C62;
+}
+.new_catalog{
+	width:100px;
+	height:100px;
+	margin:25px;
+	background-color:#888;
+	box-shadow: 0px 5px 5px 0px #888;
+	cursor:pointer;
+	text-align:center;
+	color:#FFF;
+	font-size:80px;
+}
+.new_catalog:hover{
+	background-color:#CCC;
+}
+
+#inputs_catalog{
+	width:100%;
+	padding:15px 20px 15px 20px;
+	background-color:#F6B69C;
+}
+#inputs_catalog input{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:40px;
+	margin-top:10px;
+}
+#inputs_catalog textarea{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:200px;
+	margin-top:10px;
+	resize: none;
+}
+
+/* Стили товаров */
+
+.good{
+	width:100px;
+	height:100px;
+	margin:25px;
+	background-color:#109D61;
+	box-shadow: 0px 5px 5px 0px #888;
+	cursor:pointer;
+}
+.good:hover{
+	background-color:#8DDEBB;
+}
+
+.new_good{
+	width:100px;
+	height:100px;
+	margin:25px;
+	background-color:#888;
+	box-shadow: 0px 5px 5px 0px #888;
+	cursor:pointer;
+	text-align:center;
+	color:#FFF;
+	font-size:80px;
+}
+.new_good:hover{
+	background-color:#CCC;
+}
+#inputs_good{
+	width:100%;
+	padding:15px 20px 15px 20px;
+	background-color:#F6B69C;
+}
+#inputs_good input{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:40px;
+	margin-top:10px;
+}
+#inputs_good textarea{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:200px;
+	margin-top:10px;
+	resize: none;
+}
+
+/* Стили настройки цветов */
+
+#color-list{
+	display:flex;
+	flex-wrap: wrap;
+	margin-bottom:50px;
+}
+
+.color{
+	width:40px;
+	height:40px;
+	margin:10px;
+	border:2px #FFF solid;
+	cursor:pointer;
+}
+.color:hover{
+	border:2px #E65217 solid;
+}
+
+.add-color{
+	font-size:30px;
+	text-align:center;
+	width:40px;
+	height:40px;
+	margin:10px;
+	background-color:#FFF;
+	border:2px #FFF solid;
+	cursor:pointer;
+}
+.add-color:hover{
+	background-color:#DDD;
+	border:2px #E65217 solid;
+} 
+
+#color-menu{
+	position:fixed;
+	width:200px;
+	background-color:#FFF;
+}
+
+#color-palette{
+	padding:10px;
+	position:fixed;
+	width:300px;
+	background-color:#FFF;
+	z-index:10000;
+	box-shadow: 0px 5px 5px 0px #888;
+}
+#color-palette input{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:40px;
+	margin-bottom:10px;
+}
+
+/* Стили картинок */
+
+.image{
+	width:100px;
+	height:150px;
+	margin:25px;
+	cursor:pointer;
+}
+.image img{
+	width:100px;
+	height:100px;
+	box-shadow: 0px 5px 5px 0px #888;
+}
+
+#img-menu{
+	position:fixed;
+	width:200px;
+	background-color:#FFF;
+}
+
+#image-text{
+	padding:10px;
+	position:fixed;
+	width:300px;
+	background-color:#FFF;
+	z-index:10000;
+	box-shadow: 0px 5px 5px 0px #888;
+}
+#image-text input{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:40px;
+	margin-bottom:10px;
+}
+
+#image_inputs{
+	width:100%;
+	padding:15px 20px 15px 20px;
+	background-color:#F6B69C;
+}
+#image_inputs label{
+	display:block;
+	height:40px;
+	margin-top:10px;
+	cursor:pointer;
+	background-color:#109D61;
+	color:#FFF;
+}
+#image_inputs label:hover{
+	background-color:#8DDEBB;
+}
+#image_inputs label div{
+	padding:10px;
+}
+#image_inputs input{
+	display:none;
+}
+#image_inputs button{
+	margin:10px 10px 0px 0px;
+}
+
+/* Стили доступа */
+
+#enter_inputs{
+	width:100%;
+	padding:15px 20px 15px 20px;
+	background-color:#F6B69C;
+}
+#enter_inputs input{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:40px;
+	margin-top:10px;
+}
+
+/* Стили входа */
+
+#login_inputs{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:500px;
+	transform:translate(-50%,-50%);
+	padding:20px;
+	background-color:#F6B69C;
+	
+}
+#login_inputs input{
+	display:block;
+	border:1px #E65217 solid;
+	width:100%;
+	height:40px;
+	margin-top:10px;
+}
