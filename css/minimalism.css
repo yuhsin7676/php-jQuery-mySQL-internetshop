@@ -1,0 +1,242 @@
+/* Ссылки на шрифты */
+
+@font-face{
+    font-family:arimo;
+    src:url("fonts/arimo.woff");
+}
+@font-face{
+    font-family:hairline;
+    src:url("fonts/hairline.woff");
+}
+
+/* Общие стили */
+
+body{
+	margin:0px;
+}
+*{
+	box-sizing:border-box;
+}
+p, a, button{
+	font-size:20px;
+	font-family:hairline;
+	text-decoration: none;
+	color: #000;
+	text-align:center;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:hairline;
+	text-align:center;
+}
+
+/* Стили меню */
+
+#menu{
+	position:relative;
+	display:flex;
+	justify-content: space-around;
+	left:0px;
+	width:100%;
+	height:100px;
+	background-color:#D0B0F0;
+	margin-bottom: 50px;
+}
+.menu-point{
+	margin:0px;
+	padding-top:33px;
+	display:block;
+	width:150px;
+	height:100px;
+	cursor:pointer;
+	transition: 0s;
+}
+.menu-point:hover{
+	background-color:#E8D8F8;	
+}
+
+/* Стили листа каталогов*/
+
+#catalogs{
+	position:absolute;
+	left:0px;
+	width:25%;
+	background-color:#D0D0D0;	
+}
+.select-catalog{
+	margin:0px;
+	padding-top:10px;
+	width:100%;
+	height:50px;
+	text-align:center;
+	cursor:pointer;
+}
+.select-catalog:hover{
+	background-color:#E8E8E8;
+}
+
+/* Стили описания каталога*/
+
+#catalog-description{
+	position:relative;
+	display:flex;
+	left:25%;
+	width:75%;
+	height:500px;
+	background-color:#E8E8E8;
+}
+#catalog-description img{
+	left:0px;
+	width:50%;
+	object-fit:contain;
+}
+#catalog-description .text{
+	text-align:left;
+	white-space:pre-wrap;
+	width:50%;
+}
+
+/* Стили листа товаров*/
+
+#goodList{
+	position:relative;
+	display:flex;
+	justify-content: space-around;
+	left:25%;
+	width:75%;
+	background-color:#808080;
+}
+.select-good{
+	margin:0px;
+	padding-top:5px;
+	display:block;
+	height:40px;
+	cursor:pointer;
+	color:#FFF;
+}
+.select-good:hover{
+	background-color:#D0D0D0;
+	color:#000;
+}
+
+/* Стили товара*/
+
+#goods{
+	position:relative;
+	left:25%;
+	width:75%;
+	height:800px;
+	background-color:#E8E8E8;
+	margin-bottom:50px;
+}
+.single-goods{
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	background-color:#E8E8E8;
+}
+.single-goods h3{
+	position:absolute;
+	width: 50%;
+	right:0px;
+	margin: 0px;
+	text-align: center;
+}
+.single-goods p{
+	display:block;
+	position:absolute;
+	width:100px;
+	right:100px;
+	bottom:50px;
+	margin:0px;
+	text-align: center;
+}
+.single-goods .desc-good{
+	position:absolute;
+	width: 50%;
+	right:0px;
+	top:50px;
+	margin: 0px;
+	text-align: center;
+}
+.single-goods button{
+	position:absolute;
+	display: block;
+	margin: 0px auto;
+	bottom:20px;
+	right:20px;
+}
+.single-goods img{
+	position:absolute;
+	left:0px;
+	width:50%;
+	object-fit:contain;
+}
+
+/* Стили списка цветов */
+
+#colorList{
+	display:flex;
+	justify-content: space-around;
+	position:relative;
+	width:75%;
+	left:25%;
+	background-color:#E8E8E8;
+}
+.color{
+	position:relative;
+	width:300px;
+	height:200px;
+	cursor:pointer;
+}
+.color:hover .colorpanel{
+	background-color:#FFF;
+}
+.colorpanel{
+	position:absolute;
+	left:0px;
+	width:100%;
+	height:25%;
+	bottom:0px;
+	background-color:#888;
+}
+.choosed .colorpanel{
+	background-color:#D0B0F0;
+}
+.choosed:hover .colorpanel{
+	background-color:#D0B0F0;
+}
+
+/* Стили окна отправки*/
+
+#ycart{
+	display: none;
+	position: absolute;
+	width: 300px;
+	height:500px;
+	background-color:#FFF;
+	z-index:10;
+}
+
+/* Стили подвала*/
+
+#down{
+	left:0%;
+	margin-top:50px;
+	width:100%;
+	height:100px;
+	background-color:#D0B0F0;
+}
+#down a{
+	margin:0px;
+	padding-top:33px;
+	display:block;
+	width:150px;
+	height:100px;
+	cursor:pointer;
+	transition: 0s;
+}
+#down a:hover{
+	background-color:#E8D8F8;
+}
+
+
